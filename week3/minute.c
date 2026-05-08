@@ -12,7 +12,8 @@ int main(void){
     int Mvmin = Mvt%60;
     int FHr = Hr+Mvt/60;
     int Tdu = Mvt/60;
-    int FMin =(Mvt+Min)%60;
+    int FMin =(Mvt+Min);
+    printf("%d \n", FMin);
 if( FMin >= 60){
     FHr = FHr + (FMin / 60);
     FMin = FMin % 60;
